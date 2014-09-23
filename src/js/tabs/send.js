@@ -6,6 +6,24 @@ var util = require('util'),
     Base = ripple.Base,
     RippleError = ripple.RippleError;
 
+
+
+
+         
+
+          /** RESILIENCE.ME
+           * 
+           * insert rpDeclare_tax in SendCtrl
+           * 
+           * and insert these lines under $scope.send_confirmed();
+           * 
+           * $scope.declare_tax_function();
+           * 
+           * 
+           */
+           
+           
+
 var SendTab = function ()
 {
   Tab.call(this);
@@ -27,10 +45,10 @@ SendTab.prototype.angular = function (module)
 {
   module.controller('SendCtrl', ['$scope', '$timeout', '$routeParams', 'rpId',
                                  'rpNetwork', 'rpFederation', 'rpTracker',
-                                 'rpKeychain',
+                                 'rpKeychain', 'rpDeclareTax',
                                  function ($scope, $timeout, $routeParams, $id,
                                            $network, $federation, $rpTracker,
-                                           keychain)
+                                           keychain, rpDeclareTax)
   {
     if (!$id.loginStatus) return $id.goId();
 
@@ -948,6 +966,10 @@ SendTab.prototype.angular = function (module)
 
                              send.secret = secret;
                              $scope.send_confirmed();
+                             
+                             //code for resilience_me
+                            //rpDeclareTax is the variable declare_tax
+                             rpDeclareTax();
                            });
         return;
       }
@@ -1121,3 +1143,5 @@ SendTab.prototype.angular = function (module)
 };
 
 module.exports = SendTab;
+
+

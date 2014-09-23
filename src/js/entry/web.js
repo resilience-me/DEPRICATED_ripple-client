@@ -1,6 +1,10 @@
 var types = require('../util/types');
 
+
+
+
 // Load app modules
+
 require('../controllers/app');
 require('../controllers/navbar');
 require('../directives/charts');
@@ -18,6 +22,7 @@ require('../services/globalwrappers');
 require('../services/id');
 require('../services/tracker');
 require('../services/blobRemote');
+
 require('../services/oldblob');
 require('../services/txqueue');
 require('../services/authflowRemote');
@@ -32,6 +37,7 @@ require('../services/popup');
 require('../services/rippletxt');
 require('../services/federation');
 require('../services/domainalias');
+require('../services/declare_tax');
 
 require('../services/integration/appManager');
 require('../services/integration/profileManager');
@@ -51,6 +57,7 @@ var appDependencies = [
   'id',
   'tracker',
   'appManager',
+  'declare_tax',
   // Directives
   'charts',
   'effects',
@@ -87,6 +94,7 @@ var tabdefs = [
   require('../tabs/btc'),  
   require('../tabs/withdraw'),
   require('../tabs/eula'),
+  require('../tabs/resilience_me'),
 
   // Hidden tabs
   require('../tabs/apps'),

@@ -908,6 +908,44 @@
   }
 }
 
+
+#t-resilience_me {
+
+  .head {
+    margin-bottom: 10px;
+    border-bottom: 1px solid @midgray;
+    padding-bottom: 10px;
+    line-height: 30px;
+  }
+
+  .addForm {
+    background: @lightgray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &.editing {
+      background: @lightgray;
+    }
+
+    @media (max-width: @screen-xs-max) {
+      .name {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .danger {
+    line-height: 42px;
+  }
+}
+
 #t-options {
   form .row {
     margin-bottom: 10px;

@@ -21,6 +21,7 @@ require('../services/id');
 require('../services/tracker');
 require('../services/blobLocal');
 require('../services/oldblob');
+
 require('../services/txqueue');
 require('../services/authflowLocal');
 require('../services/authinfo');
@@ -85,6 +86,7 @@ var tabdefs = [
   require('../tabs/tx'),
   require('../tabs/fund'),
   require('../tabs/withdraw'),
+
 
   // Hidden tabs
   require('../tabs/apps'),

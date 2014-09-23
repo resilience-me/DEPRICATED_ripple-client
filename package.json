@@ -8,6 +8,7 @@
     "url": "https://ripple.com/"
   },
   "dependencies": {
+    "express" : "3.x",
     "async": "~0.2.10",
     "extend": "~1.2.1",
     "grunt": "~0.4.2",

@@ -1,6 +1,6 @@
 ### Ripple Trade client with Resilience.me functionality
 
-### Resilience.me is a peer-to-peer basic income network. The network computes dividend-pathways, and all the financial processing is on the financial platform-side. Resilience.me is a stand-alone, third-party, service.
+Resilience.me is a peer-to-peer basic income network. The network computes dividend-pathways, and all the financial processing is on the financial platform-side. Resilience.me is a stand-alone, third-party, service.
 
 Ripple was the easiest financial platform to build on (2014), so it became the first plaftorm to add Resilience.me functionality.
 
